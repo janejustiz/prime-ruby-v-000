@@ -1,4 +1,5 @@
-def prime?(num.to_i)
+def prime?(numb)
+  num = numb.to_i
   test_num = (2..(num - 1)).to_a
   if num <= 3
     puts true
