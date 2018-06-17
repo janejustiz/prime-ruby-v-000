@@ -1,7 +1,7 @@
 def prime?(num)
   test_num = (2..(num - 1)).to_a
   if num <= 3
-    puts true
+    true
   else
     result = []
     test_num.each do |test|
@@ -9,6 +9,6 @@ def prime?(num)
         result << "not prime"
       end
     end
-    puts (result.any?{|x| x == "not prime"}? false : true)
+    result.any?{|x| x == "not prime"}? false : true
   end
 end
