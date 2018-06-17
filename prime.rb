@@ -3,13 +3,13 @@ def prime?(num)
   if num <= 3
     puts true
   else
+    result = []
     test_num.each do |test|
-      result = []
       if num % test == 0
         result << "not prime"
       end
-      puts (result.any?{|x| x == "not prime"}? false : true)
     end
+    puts (result.any?{|x| x == "not prime"}? false : true)
   end
 end
 
