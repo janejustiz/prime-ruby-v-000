@@ -1,7 +1,7 @@
 def prime?(num)
-  return false if num <0
+  return false if num <=1
   test_num = (2..(num - 1)).to_a
-  if (num <= 3)
+  if num == 2
     true
   else
     result = []
