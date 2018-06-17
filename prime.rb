@@ -8,7 +8,7 @@ def prime?(num)
       if num % test == 0
         result << "not prime"
       end
-      result.any?{|x| x == "not prime"}? puts false : puts true
+      puts (result.any?{|x| x == "not prime"}? false : true)
     end
   end
 end
