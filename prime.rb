@@ -12,6 +12,3 @@ def prime?(num)
     puts (result.any?{|x| x == "not prime"}? false : true)
   end
 end
-
-num = gets.chomp.to_i
-prime?(num)
