@@ -1,6 +1,5 @@
 def prime?(num)
-  last = num - 1
-  test_num = (2..(last)).to_a
+  test_num = (2..(num.to_i - 1)).to_a
   if num <= 3
     puts true
   else
