@@ -1,6 +1,6 @@
 def prime?(num)
   test_num = (2..(num - 1)).to_a
-  if (num <= 3 || num < 0)
+  if (num <= 3 || num == -1)
     true
   else
     result = []
